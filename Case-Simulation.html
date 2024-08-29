@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Simulation Website</title>
+    <link rel="stylesheet" href="Case-Simulation.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <div class="landing-page">
+        <h1>Welcome to the Constitutional Rights Simulator</h1>
+        <p>Simulate legal cases and understand your fundamental rights under the Indian Constitution.</p>
+        <button id="start-btn" onclick="startSimulation()">Start Case Simulation</button>
+    </div>
+
+    <!-- Case Simulation Section -->
+    <div class="case-simulation" id="case-simulation" style="display:none;">
+        <h2 class="case-title">Rajesh Kumar vs. State of Rajasthan</h2>
+        <p class="case-brief">Rajesh Kumar claims his right to privacy has been violated by unauthorized surveillance. Explore the case and make your arguments!</p>
+
+        <!-- Evidence Section -->
+        <div class="evidence-container">
+            <div class="evidence-box">
+                <h3>Evidence A</h3>
+                <p>A notice from the Residents’ Welfare Association indicating no formal consent for camera installation.</p>
+            </div>
+            <div class="evidence-box">
+                <h3>Evidence B</h3>
+                <p>Reference Case: <em>Justice K.S. Puttaswamy (Retd.) vs. Union of India</em> (2017) - Right to privacy as a fundamental right.</p>
+            </div>
+        </div>
+
+        <!-- Main Case Section -->
+        <div class="case-container">
+            <!-- Opposition Arguments -->
+            <div class="opposition">
+                <div class="opposition-argument">
+                    <p>The State argues that surveillance cameras are essential for maintaining public safety.</p>
+                </div>
+            </div>
+
+            <!-- Your Choices -->
+            <div class="your-side">
+                <h3>Your Argument</h3>
+                <div class="choices">
+                    <button onclick="selectChoice('Option 1: Argue state overstepped its authority.')">Option 1</button>
+                    <button onclick="selectChoice('Option 2: Argue for a fair balance between privacy and safety.')">Option 2 (Best Choice)</button>
+                    <button onclick="selectChoice('Option 3: Argue cameras could be discriminatory.')">Option 3</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Judgment Button -->
+        <button id="judgment-btn" onclick="showJudgment()" style="display:none;">See Case Judgment</button>
+
+        <!-- Next Case Button -->
+        <button id="next-case-btn" onclick="nextCase()" style="display:none;">Next Case</button>
+    </div>
+
+    <!-- Audio Elements for Sounds -->
+    <audio id="win-sound" src="win.mp3"></audio>
+    <audio id="loss-sound" src="loss.mp3"></audio>
+
+    <script src="Case-Simulation.js"></script>
+</body>
+</html>

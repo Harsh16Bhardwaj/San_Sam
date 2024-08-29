@@ -24,6 +24,7 @@
 /*Footer*/
 footer{
     bottom: 0;
+    background-color: ;
     background-color: #10111D;
 
 }
@@ -212,8 +213,7 @@ footer{
 
 
 /* Updated CSS for .start-btn */
-.start-btn:hover {
-    background-color: #777; /* Color change on hover */
+.start-btn:hover { /* Color change on hover */
 }
 
 .start-btn {
