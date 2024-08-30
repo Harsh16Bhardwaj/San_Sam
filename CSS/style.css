@@ -1,0 +1,1008 @@
+:root{
+    /* 
+        --background: #000000; */
+        --background:#060910;
+    
+        --gold: #8c6607;
+      
+        --headings: #cbcbcb;
+      
+      
+        --neonblue: #008e87;
+        --neonpink: #b30d55;
+        --neonyellow: #a19c3d;
+      }
+    
+    body{
+        background-color:var(--background);
+        height: 2000px;
+    }
+
+
+
+
+/*Footer*/
+footer{
+    bottom: 0;
+    background-color: ;
+    background-color: #10111D;
+
+}
+#logo-const{
+    color: #b30d55;
+}
+#footer-title{
+    font-family: "Style Script";
+    font-weight: 400;
+    color: var(--gold);
+}
+
+#footer-content > div > div > a{
+    font-family: "Poppins", cursive;
+    font-weight: 400;
+    color: rgb(161, 161, 161);
+    padding: 4px;
+    margin: 2px;
+}
+#footer-content > div > div > a:hover{
+    transform: scale(2);
+    color: white;
+}
+#footer-content > div > div > h2{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+
+/*Lower Footer Section */
+#footer_seprator{
+    background: linear-gradient(#200589,#E43681);
+}
+#footer-social-golden{
+    color: var(--gold);
+    font-weight: 700;
+}
+
+#footer_socials{
+    font-family: "Poppins", cursive;
+    font-weight: 700;
+}
+#social_img{
+    border: solid 2px;
+    border-top: #200589 solid 3px;
+    border-left: #E43681 solid 3px;
+    border-right: #E43681 solid 3px;
+
+}
+#socials{
+    opacity: 0.85;
+    transition: 0.3s;
+}
+#socials:hover{
+    opacity: 1.0;
+}
+
+#socials_hover :hover{
+    transform: scale(1.05);
+    rotate: 1.5deg;
+    transition: all 0.2s ease-in-out;
+    opacity: 1.0;
+    transition: 0.3s;
+}
+
+
+
+#scroll-watcher {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    height: 10px;
+    background: rgba(255, 99, 71, 0.5); /* Semi-transparent color for visibility */
+    transform: translateX(-50%);
+    transition: width 0.1s ease-in-out; /* Faster transition for smoother effect */
+}
+
+
+
+/* Navigation Bar Styles */
+
+#web-logo{
+    width: 200px;
+    position: fixed;
+    margin-top: 18px;
+    margin-left: 70px;
+    z-index: 15;
+}
+
+
+#navbar {
+    margin-top: 5px;
+    position: fixed;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: end;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners for the navbar */
+    z-index: 10;
+
+}
+
+.nav-btn {
+    margin-top: 10px;
+    font-family: "Poppins";
+    margin-left: 25px;
+    margin-right: 25px;
+    border: none;
+    border-radius: 25px; /* Rounded borders for buttons */
+    color: rgb(207, 207, 207);
+    padding: 8px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.nav-btn:hover {
+    background-color: #777; /* Color change on hover */
+}
+
+.nav-btn{
+    font-family: "Poppins";
+    border:none;
+    color: rgb(215, 215, 215);
+    z-index: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.nav-btn::after{
+    content:'';
+    background-color: #ffffff;
+    height: 100%;
+    width: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+
+}
+.nav-btn:hover::after{
+    width: 100%;
+}
+.nav-btn:hover{
+    color: black;
+
+}
+
+/*landing*/
+#landing-page{
+    text-align: center;
+    height: 100vh;
+    background-image:url("assets/landing.png");
+    background-size: cover;
+    > h3{
+        font-family: "Poppins";
+        font-size: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+    }
+    > h1{
+        font-family: "Cinzel Decorative";
+        margin-top: 30px;
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: white;
+    }
+    > h2 {
+        font-family: "Poppins";
+        font-size: 1.15rem;
+        color: rgb(189, 189, 189);
+    }
+}
+
+
+#team-logo{
+    width: 100px;
+    margin-left: 47%;
+    padding-top: 80px;
+}
+
+
+/* Updated CSS for .start-btn */
+.start-btn:hover { /* Color change on hover */
+}
+
+.start-btn {
+    font-size: 1.3rem;
+    margin: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Poppins";
+    border: none;
+    background-color: #10111D;
+    color: rgb(218, 216, 216);
+    z-index: 0;
+    border-radius: 22px;
+    border: 2px solid #D4AFA6;
+    cursor: pointer;
+    position: relative;
+}
+
+.start-btn::after {
+    content: '';
+    background-color: var(--neonpink);
+    height: 100%;
+    width: 0;
+    border-radius: 22px;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+}
+
+.start-btn:hover::after {
+    width: 100%;
+}
+
+.start-btn:hover {
+    color: white;
+}
+
+
+/*random-fact*/
+#random-facts{
+    padding-top: 40px;
+    height: 40vh;
+    width: auto;
+    background-color:#060910 ;
+    >div >h2{
+        margin-top: 60px;
+        color: rgb(212, 212, 212);
+        text-align: center;
+        font-family: "Cinzel Decorative";
+        font-size: 2.5rem;
+    }
+}
+
+.facts-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensures responsiveness */
+ /* Space between the boxes */
+}
+
+.fact-box {
+    overflow: auto;
+    height: 350px;
+    margin-top: 40px;
+    margin: 20px;
+    flex: 1;
+    min-width: 100px; /* Ensures a minimum width for responsiveness */
+    max-width: 25%; /* Ensures boxes are not too wide */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Includes padding and border in the element’s total width and height */
+    >h3{
+        color: white;
+        text-align: center;
+        font-family: "Poppins";
+        font-size: 1.3rem;
+    }
+    >p{
+        color: #D4AFA6;
+        margin-top: 13px;
+        padding: 10px;
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+/*Riddles*/
+#riddles-zone{
+    background-color:#060910;
+    padding-top: 25vh;
+    padding-bottom: 10vh;
+    
+
+    >div >div >h2{
+        color: rgb(207, 206, 206);
+        text-align: center;
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 4rem;
+        margin-bottom: 20px;
+    }
+}
+.Riddle-sphere{
+
+        display: flex;
+        justify-content: center;
+        width: 40%;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid white;
+    
+}
+
+.riddle-container {
+    height: 80vh;
+    background-color:#060910;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 80px;
+    color: #D4AFA6; /* Light text color */
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+}  
+
+
+
+
+#next-btn{
+    width: 150px;
+    font-weight: 700;
+    position: relative;
+    border: 2px solid white;
+    background-color: #D4AFA6;
+    margin-top: 180px;
+    margin-left: 20px;
+    height: 60px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    font-family: "Poppins";
+   
+    color: #010808;
+    z-index: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+#next-btn::after{
+    content:'';
+    background-color: #ffffff;
+    height: 100%;
+    width: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+    font-weight: 600;
+}
+#next-btn:hover::after{
+    width: 100%;
+}
+#next-btn:hover{
+    color: black;
+
+}
+.options button.no-hover:hover {
+ /* Remove hover effect */
+    cursor: default; /* Optional: Change cursor to default */
+}
+
+
+
+
+
+
+#riddle-content{
+    display: flex;
+    justify-content: center;
+    
+}
+#box-1002{
+    padding: 20px;
+    width: 29%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#box-1001{
+    border-radius: 50px;
+    box-shadow:
+  0.6px 0.6px 1.3px rgba(212, 175, 166, 0.02),
+  1.3px 1.3px 3.2px rgba(212, 175, 166, 0.028),
+  2.5px 2.5px 6px rgba(212, 175, 166, 0.035),
+  4.5px 4.5px 10.7px rgba(212, 175, 166, 0.042),
+  8.4px 8.4px 20.1px rgba(212, 175, 166, 0.05),
+  20px 20px 48px rgba(212, 175, 166, 0.07);
+
+    width: 55%;
+    background-color: #10111D;
+    > p{
+        font-family: "Cinzel Decorative";
+    }
+}
+
+.riddle-box h3 {
+    
+    font-size: 0rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#riddleDescription{
+    font-size: 1.7rem;
+    padding: 100px;
+
+ 
+}
+
+
+
+.options {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.options button {
+    text-align: left;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+    border: none;
+    color: white;
+    padding: 10px;
+    margin-left: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options button:hover {
+    background-color: #D4AFA6;
+    color: black;
+    font-weight: 600;
+}
+
+.correct {
+    background-color: #28a745;
+}
+
+.incorrect {
+    background-color: #dc3545;
+}
+
+
+
+
+
+
+
+/*Case Study*/
+
+#case-study{
+    padding-top: 100px;
+    background-color: #060910;
+    padding: 40px;
+}
+.case-study-tt{
+    color: rgb(207, 206, 206);
+        text-align: center;
+        font-family:"Cinzel Decorative";
+
+        font-size: 4.7rem;
+        margin-bottom: 20px;
+        text-decoration: underline;
+        text-underline-offset: 40px;
+        border-bottom: 2px solid white;
+        width: 40%;
+}
+
+.case-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.case-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #dc3546f5;
+}
+
+.case-description {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(225, 224, 224);
+}
+
+.case-question {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #D4AFA6;
+}
+
+.case-options-container {
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    >div > button{
+        width: 200px;
+        
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 15px;
+        background-color: #f5e1dc   ;
+        transition: background-color 0.3s ease;
+        font-size: 1.4rem;
+
+       font-weight: 700;
+    }
+    >div > button:hover{
+        background-color: #b30d55;
+        color: white;
+    }
+}
+
+
+.case-button {
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+    z-index: 1;
+    position: relative;
+}
+
+.case-button.clicked {
+    background-color: #ccc;
+    cursor: default;
+}
+
+.case-button:hover:not(.clicked) {
+    background-color: #e0e0e0;
+}
+
+.case-judgment {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ccc;
+}
+
+
+
+.case-option-state.correct {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.case-option-centre.correct {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+
+
+.case-next-button{
+    width: 156px;
+    font-weight: 700;
+    color: #010808;
+    z-index: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    color: #e0e0e0;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 20px;
+    border: 3px solid #b30d556c;
+    border-radius: 20px;
+    z-index: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+}
+.case-next-button::after{
+    content:'';
+    background-color: #b30d55;
+    height: 100%;
+    width: 0px;
+    border-radius: 15px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+    font-weight: 600;
+}
+.case-next-button:hover::after{
+    width: 100%;
+}
+.case-next-button:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+#case-study-img{
+    margin: 20px;
+    width: 200px;
+
+
+}
+
+
+.case-main{
+}
+
+
+
+
+
+
+
+
+
+
+#preamble{
+    height: 120vh;
+    padding: 40px;
+    text-align: center;
+    >div >div{
+        border-bottom: 1px solid white;
+        width: 60%;
+    }
+
+    >div >div >h1{
+        color: white;
+        font-family: "Cinzel Decorative";
+        text-align: center;
+        display: inline;
+    }
+    >div >div >h2{
+        color: white;
+        font-family: "Cinzel Decorative";
+        text-align: center;
+        display: inline;
+    }
+}
+#preamble-img{
+    height: 100vh;
+    padding: 40px;
+}
+
+
+
+
+
+
+
+#documentation{
+    margin-top: 160px;
+    text-align: center;
+    >h1{
+        font-size: 5rem;
+        color: white;
+        font-family: "Cinzel Decorative";
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 20px;
+    }
+}
+
+/*Documentation*/
+
+
+
+
+
+.democracy{
+    margin-top: 80px;
+    >div{
+        width: 50%;
+    }
+
+    >div >h2{
+        
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color: rgb(206, 205, 205);
+            font-size: 2.8rem;
+            text-align: center;
+            padding-top: 40px;
+            padding-left: 70px;
+        
+    }
+    >div >p{
+        padding-left: 50px;
+        padding-right: 50px;
+        font-family:"Poppins";
+        color: rgb(206, 205, 205);
+        font-size: 0.9rem;
+        text-align: center;
+        padding-top: 20px;
+        padding-left: 140px;
+    }
+
+    >div >h3{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: #D4AFA6;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 40px;
+        padding-left: 140px;
+    }
+    >div >img{
+
+        padding: 50px;
+        padding-right: 120px;
+        padding-top: 220px;
+        width: 700px;
+        opacity: 0.8;
+    }
+}
+
+.sep{
+    width: 2px;
+    background-color: #dc3545;
+    height: 250px;
+    background-color: #cbcbcb;
+}
+.other-govts{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.other-gov{
+    width: 15%;
+    >h3{
+        color: #D4AFA6;
+        font-size: 1.9rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    >p{
+        color: rgb(228, 228, 228);
+        font-family: "Poppins";
+
+    }
+
+
+}
+.extra123{
+    margin-top: -40px;
+}
+.monarchy{
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Judiciary Section*/
+#grad1{
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(#060910,#020001);
+}
+#grad2{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(#020202,#060606);
+}
+
+
+#tutorial{
+    background-image: url(./assets/judiciary.jpeg);
+    opacity: 0.95;
+    background-blend-mode:difference;
+    background-repeat: no-repeat;
+    background-size:1600px;
+    background-color: #0d0922;
+    width: 100%;
+    margin-top: -30px;
+
+
+    >h2{
+        padding-top: 20px;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 800;
+        color: #b30d55;
+        font-family: "Poppins";
+        background-color: #0108085b;
+
+    }
+    >p{
+        padding-left: 220px;
+        padding-right: 220px;
+        font-family: "Poppins";
+        text-align: center;
+        font-size: 1.rem;
+        color: rgb(255, 255, 255);
+
+        padding-bottom: 50px;
+    }
+}
+
+#tut-left{
+    
+    padding: 40px;
+    padding-top: 70px;
+
+
+    >h2{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        font-size: 2.3rem;
+        text-align: center;
+        padding: 20px;
+        color: #ffffff;
+        margin-top: 0px;
+    }
+
+}
+.feature{
+    padding: 10px;
+    width: 25%;
+    background-color: #01080867;
+    border-radius: 40px;
+}
+.special{
+    background-color: transparent;
+}
+.functions{
+
+    >div >h3{
+        text-align: center;
+        font-size: 1.6rem;
+        color: #b30d55;
+        font-weight: 700;
+    }
+    >div > p{
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #e4e3e3;
+        font-family: "Poppins";
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+.hierarchy{
+    background-color: #020001;
+    width: 100%;
+    margin-top: 100px;
+
+
+}
+.hi-img{
+    width: 200px;
+}
+#supimg{
+    width: 280px;
+    margin-right: 40px;
+    margin-top: 50px;
+}
+#higimg{
+    width: 240px;
+    margin-right: 40px;
+}
+#disimg{
+    width: 200px;
+    margin-right: 40px;
+}
+#misimg{
+    width: 160px;
+    margin-right: 40px;
+    margin-top: 35px;
+}
+
+#supreme{
+    margin-top: 70px;
+    text-align: center;
+    font-family: "Poppins";
+    width: 40%;
+    >h2{
+        font-weight: 700;
+         font-size: 2.7rem;
+         color: #ffdc4e;
+    }
+    >p{
+        
+        font-size: 1.1rem;
+        color: rgb(189, 189, 189);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+#high{
+    text-align: center;
+    font-family: "Poppins";
+    width: 37%;
+    >h2{
+        font-weight: 600;
+         font-size: 2.1rem;
+         color: #EFBF62;
+    }
+    >p{
+        
+        font-size: 1rem;
+        color: rgb(189, 189, 189);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+#district{
+    text-align: center;
+    font-family: "Poppins";
+    
+    width: 32%;
+    >h2{
+        font-weight: 600;
+         font-size: 1.9rem;
+         color: #DCA850;
+    }
+    >p{
+        
+        font-size: 0.9rem;
+        color: rgb(189, 189, 189);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+.seppp{
+    margin-top: 30px;
+    width: 2px;
+    height: 200px;
+    background-color: #a3a3a3;
+}
+#misc{
+    text-align: center;
+    font-family: "Poppins";
+    width: 26%;
+    margin-top: 40px;
+    >h2{
+        font-weight: 600;
+         font-size: 1.7rem;
+         color: #C78D3B;
+    }
+    >p{
+        
+        font-size: 0.8rem;
+        color: rgb(189, 189, 189);
+        padding-bottom: 50px;
+        text-align: center;
+    }
+}
+.forcolor{
+    background-color: #020001;
+}

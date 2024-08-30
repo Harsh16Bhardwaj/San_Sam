@@ -1,0 +1,307 @@
+
+body{
+    background-color: #060910;
+}  
+/* For WebKit browsers (Chrome, Safari) */
+/* For WebKit browsers (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 20px;  /* Increased width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;  /* Color of the track (background) */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar handle */
+    border-radius: 10px;     /* Rounded corners for the handle */
+    border: 4px solid #555;  /* Optional: Border around the handle */
+}
+
+#executive{
+    font-family: "Anton";
+    font-size: 8rem;
+    margin-left: 0px;
+    color: #ffffff;
+    background-color: #10111d33;
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thick;      /* Thick scrollbar */
+    scrollbar-color: #7cc2b4 #304D4B; /* Handle color and track color */
+}
+
+
+        
+        
+        /*Navbar*/
+        #web-logo{
+            width: 200px;
+            position: fixed;
+            margin-top: 18px;
+            margin-left: 70px;
+            z-index: 15;
+        }
+        
+        
+        #navbar {
+            margin-top: 5px;
+            position: fixed;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-content: end;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px; /* Rounded corners for the navbar */
+            z-index: 10;
+        
+        }
+        
+        .nav-btn {
+            margin-top: 10px;
+            font-family: "Poppins";
+            margin-left: 25px;
+            margin-right: 25px;
+            border: none;
+            border-radius: 25px; /* Rounded borders for buttons */
+            color: rgb(207, 207, 207);
+            padding: 8px 12px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s ease; /* Smooth color transition */
+        }
+        
+        .nav-btn:hover {
+            background-color: #777; /* Color change on hover */
+        }
+        
+        .nav-btn{
+            font-family: "Poppins";
+            border:none;
+            color: rgb(215, 215, 215);
+            z-index: 0;
+            border-radius: 15px;
+            cursor: pointer;
+            position: relative;
+        }
+        .nav-btn::after{
+            content:'';
+            background-color: #ffffff;
+            height: 100%;
+            width: 0px;
+            border-radius: 15px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            transition: 300ms ease-in-out;
+        
+        }
+        .nav-btn:hover::after{
+            width: 100%;
+        }
+        .nav-btn:hover{
+            color: black;
+        
+        }        
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .article {
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #666;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .funfact {
+            font-style: italic;
+            color: #007bff;
+        }
+/*Landing Page*/
+#landing-page{
+    text-align: center;
+    height: 100vh;
+    background-image:url("assets/Designer\ \(25\).jpeg");
+    background-size: cover;
+    margin-top: -40px;
+    > h3{
+        font-family: "Poppins";
+        font-size: 1rem;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+    }
+    > h1{
+        font-family: "Cinzel Decorative";
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: 600;
+        color: white;
+    }
+    > h2 {
+        font-family: "Poppins";
+        font-size: 1.15rem;
+        color: rgb(189, 189, 189);
+    }
+}
+
+
+#team-logo{
+    width: 100px;
+    margin-left: 47%;
+    padding-top: 80px;
+}
+
+
+/* Updated CSS for .start-btn */
+.start-btn:hover {
+    background-color: #777; /* Color change on hover */
+}
+
+.start-btn {
+    font-size: 1.3rem;
+    margin: 30px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Poppins";
+    border: none;
+    background-color: #10111D;
+    color: rgb(218, 216, 216);
+    z-index: 0;
+    border-radius: 22px;
+    border: 2px solid #D4AFA6;
+    cursor: pointer;
+    position: relative;
+}
+
+.start-btn::after {
+    content: '';
+    background-color: var(--neonpink);
+    height: 100%;
+    width: 0;
+    border-radius: 22px;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: 300ms ease-in-out;
+}
+
+.start-btn:hover::after {
+    width: 100%;
+}
+
+.start-btn:hover {
+    color: white;
+}
+
+
+/*Tutorials*/
+
+#tutorial{
+    height: 100vh;
+}
+
+
+
+/*Documentation*/
+#documentation{
+    height: auto;
+    width: 100%;
+    padding: 30px;
+}
+#Articles{
+    text-align: center;
+    >h1{
+        font-family: "Poppins";
+        font-size: 6rem;
+        font-weight: 500;
+        color: white;
+    }
+    >p{
+        font-family: "Poppins";
+        font-size: 1.2rem;
+        color: rgb(189, 189, 189);
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 100px;
+    }
+}
+
+
+.container{
+    border: #D4AFA6 2px solid;
+    border: 50px;
+}
+.article{
+    border: 2px solid #D4AFA6;
+    padding: 60px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    text-align: center;
+    >h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: #2db09e;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    >h3{
+        color: #dc3545;
+        padding-top:  10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    >p{
+        color: #c4c4c4;
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+    >div >div >h3{
+        color: #D4AFA6;
+        padding-top:  10px;
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+    >div >div >p{
+        color: #efeeee;
+        padding-bottom: 20px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-family: "Montserrat";
+    }
+    >div >div{
+        width: 50%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+.funfact{
+    color: #b30d55;
+}

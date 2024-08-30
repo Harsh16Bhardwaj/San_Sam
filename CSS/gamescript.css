@@ -18,15 +18,15 @@
         height: 1000px;
     }
 
-h1{
 
-    color: #ccc;
-    font-weight: 600;
-    font-family: "Poppins";
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 10vh;
-}
+    h1{
+        color: #ccc;
+        font-weight: 600 !important; 
+        font-family: "Poppins";
+        font-size: 4rem  !important; 
+        text-align: center;
+        margin-top: 10vh;
+    }
 
 #scenario-selection {
     text-align: center;
@@ -38,7 +38,7 @@ h1{
 }
 #landing-page{
     height: 80vh;
-    background-image: url(assets/Designer\ \(32\).jpeg);
+    background-image: url(assets/game_image.jpeg);
     
     background-size: 1600px;
 }
@@ -67,7 +67,7 @@ h1{
         padding: 20px;
         font-size: 1.5rem;
     }
-    >
+    
 }
 
 #laws-container {
