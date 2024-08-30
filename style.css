@@ -820,7 +820,7 @@ footer{
 
 
 #tutorial{
-    background-image: url(/assets/judiciary.jpeg);
+    background-image: url(./assets/judiciary.jpeg);
     opacity: 0.95;
     background-blend-mode:difference;
     background-repeat: no-repeat;
