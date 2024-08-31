@@ -38,8 +38,7 @@
 }
 #landing-page{
     height: 80vh;
-    background-image: url(assets/game_image.jpeg);
-    
+    background-image: url(../assets/game_image.jpeg);
     background-size: 1600px;
 }
 
@@ -62,6 +61,7 @@
 #simulation-container {
     padding-top: 0px;
     padding: 40px;
+    
     >h3{
         color: #cdcbcb;
         padding: 20px;

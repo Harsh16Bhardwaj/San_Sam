@@ -296,6 +296,7 @@ const resultMessage = document.getElementById('result-message');
 let attemptCount = 0;
 const maxAttempts = 3;
 
+
 // Utility function to create clickable options
 function createClickableOption(name, value, label) {
     const optionContainer = document.createElement('div');
