@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./CSS/Case-Simulation.css">
 </head>
 <body>
+    <div id="google_translate_element" ></div>
+
     <!-- Landing Page -->
     <div class="landing-page">
         <h1>Welcome to the Constitutional Rights Simulator</h1>
@@ -62,6 +64,15 @@
     <!-- Audio Elements for Sounds -->
     <audio id="win-sound" src="win.mp3"></audio>
     <audio id="loss-sound" src="loss.mp3"></audio>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+      </script>      
+      <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script src="./JS/Case-Simulation.js"></script>
 </body>
