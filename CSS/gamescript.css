@@ -69,6 +69,7 @@
         padding: 20px;
         font-size: 1.5rem;
         margin-top: -40px;
+        margin-top: 20px;
     }
     
 }
@@ -82,31 +83,38 @@
 .law-item {
     flex: 1 1 18%; /* Adjust percentage based on the number of blocks per row */
     box-sizing: border-box;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    
     background-color: #f9f9f9;
     transition: background-color 0.3s;
 }
 
 .law-item.correct {
-    background-color: lightgreen;
+    background-color: rgb(97, 253, 97);
 }
 
 .law-item.incorrect {
-    background-color: lightcoral;
+    background-color: rgb(246, 50, 50);
+    color: white;
 }
 
 .law-description {
+    padding-left: 13px;
+    padding-right: 13px;
+    text-align: center;
     margin-top: 5px;
     color: #555;
 }
 
 #counterparts-container {
     display: flex;
+    margin-left: 20%;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
+    width: 60%;
 }
 
 .counterpart-item {
@@ -114,15 +122,22 @@
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    border-radius: 6px;
+    background-color: #efefef;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    
 }
 
 .counterpart-item input {
     margin-right: 10px;
+    color: #856404;
+    background-color: #008e87;
 }
 
 button {
+    margin-left: 45%;
     padding: 10px 20px;
     margin-top: 20px;
     font-size: 14px;
@@ -137,17 +152,23 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+#result-message{
+    background-color: #cb392e;
+    padding-bottom: 40px;
+    border-radius: 20px;
+
+}
 
 #result-message.correct {
     color: green;
 }
 
 #result-message.info {
-    color: blue;
-}
-
-body {
-    font-family: Arial, sans-serif;
+    width: auto;
+    display: flex;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
 }
 #scenario-selection {
     margin-bottom: 20px;
@@ -159,7 +180,6 @@ body {
         font-family: "Poppins";
         font-size: 1.4rem;
         text-align: center;
-
         margin: 10px;
     }
 }
@@ -238,9 +258,7 @@ body {
   .goog-te-menu-value,
   .goog-te-menu2,
   .goog-te-menu2-item {
-    border: 1px solid #848484; /* Border around the widget */
     border-radius: 9px; /* Rounded corners */
-    background-color: #9e9e9e; /* Background color */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for depth */
   }
 
@@ -260,3 +278,24 @@ body {
   .goog-te-menu2-item:hover {
     background-color: #f0f0f0; /* Background color on hover */
   }
+
+
+  /* For the alternate option item */
+.option-item.alternate {
+    background-color: #d0e0ff; /* Color for the alternate option */
+}
+
+.option-item.alternate:hover {
+    background-color: #b0c4de; /* Slightly different color on hover */
+}
+
+/* For the current laws container title */
+#laws-container-title {
+    font-family: "Poppins";
+    color: #008e87; /* Title color */
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}

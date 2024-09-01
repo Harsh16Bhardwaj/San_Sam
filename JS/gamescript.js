@@ -283,6 +283,7 @@ const scenarios = [
 
 
 // HTML elements
+// HTML elements
 const scenarioTitle = document.getElementById('scenario-title');
 const scenarioDescription = document.getElementById('scenario-description');
 const lawsContainer = document.getElementById('laws-container');
@@ -295,7 +296,6 @@ const resultMessage = document.getElementById('result-message');
 
 let attemptCount = 0;
 const maxAttempts = 3;
-
 
 // Utility function to create clickable options
 function createClickableOption(name, value, label) {
@@ -373,9 +373,11 @@ function analyzeSituation(scenarioIndex) {
         const lawElement = lawsContainer.children[law.id - 1];
 
         if (selectedForm && selectedForm.value === scenario.correctForms[law.id]) {
-            lawElement.style.backgroundColor = '';
+            lawElement.style.backgroundColor = 'lightgreen'; // Correct
             lawElement.classList.add('correct');
         } else {
+            lawElement.style.backgroundColor = 'lightcoral'; // Incorrect
+            lawElement.classList.add('incorrect');
             allCorrect = false;
         }
     });
@@ -404,7 +406,7 @@ function revealSolution(scenarioIndex) {
     const scenario = scenarios[scenarioIndex];
     scenario.laws.forEach((law) => {
         const lawElement = lawsContainer.children[law.id - 1];
-        lawElement.style.backgroundColor = '';
+        lawElement.style.backgroundColor = 'lightcoral'; // Incorrect
         lawElement.classList.add('incorrect');
         lawElement.textContent += ` (Correct Answer: ${scenario.correctForms[law.id]})`;
     });
@@ -426,3 +428,15 @@ analyzeBtn.addEventListener('click', () => {
 // Initial setup
 populateScenarioSelect();
 renderScenario(0);
+
+document.addEventListener('DOMContentLoaded', () => {
+    const optionItems = document.querySelectorAll('.option-item');
+
+    optionItems.forEach(item => {
+        item.addEventListener('click', () => {
+            optionItems.forEach(opt => opt.classList.remove('alternate')); // Remove from all
+            item.classList.add('alternate'); // Add to the clicked item
+        });
+    });
+});
+

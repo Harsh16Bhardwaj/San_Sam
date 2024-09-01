@@ -7,20 +7,13 @@
     <link rel="stylesheet" href="./CSS/gamescript.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Titan+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Titan+One&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 <body>
-    <div id="google_translate_element" ></div>
+    <div id="google_translate_element"></div>
 
     <section id="landing-page">
         <h1>Constitution Crisis Simulation</h1>
@@ -40,11 +33,11 @@
         <h2 id="scenario-title"></h2>
         <p id="scenario-description"></p>
         
-        <h4>Solve the crisis by choose appropriate alternatives of current laws. Find the 5 best.</h4>
-        <h3>Current Laws : </h3>
+        <h4>Solve the crisis by choosing appropriate alternatives for current laws. Find the 5 best.</h4>
+        <h3 id="laws-container-title">Current Laws:</h3>
         <div id="laws-container"></div>
 
-        <h3>Counterpart Options :</h3>
+        <h3>Counterpart Options:</h3>
         <div id="counterparts-container"></div>
 
         <button id="analyze-btn">Analyze Situation</button>
@@ -58,8 +51,8 @@
                 {pageLanguage: 'en'},
                 'google_translate_element'
             );
-        } 
-      </script>      
-      <script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        }
+    </script>      
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
