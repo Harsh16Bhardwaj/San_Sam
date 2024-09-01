@@ -36,6 +36,7 @@
     color: #cdcbcb;
     
 }
+
 #landing-page{
     height: 80vh;
     background-image: url(../assets/game_image.jpeg);
@@ -51,6 +52,7 @@
     border-radius: 40px;
     padding: 10px;
     color: #333;
+    margin-top: 0;
     background-color: #dde7e5;
 }
 #start-simulation-btn{
@@ -66,6 +68,7 @@
         color: #cdcbcb;
         padding: 20px;
         font-size: 1.5rem;
+        margin-top: -40px;
     }
     
 }
@@ -122,12 +125,13 @@
 button {
     padding: 10px 20px;
     margin-top: 20px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #008e87;
     color: white;
     border: none;
     border-radius: 4px;
+    font-weight: 700;
 }
 
 button:hover {
@@ -150,6 +154,14 @@ body {
 }
 #simulation-container {
     margin-top: 20px;
+    >h4{
+        color: #008e87;
+        font-family: "Poppins";
+        font-size: 1.4rem;
+        text-align: center;
+
+        margin: 10px;
+    }
 }
 .law-item {
     background-color: #f4f4f4;
@@ -193,9 +205,58 @@ body {
 #scenario-title{
     font-family: "Poppins";
     color: #b30d55;
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2.9rem;
+    font-weight: 800;
     text-align: center;
     margin-top: 20px;
     padding-top: 20px;
+
 }
+#scenario-description{
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    font-family: "Poppins";
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#google_translate_element {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    margin-left: 83%;
+  }
+
+  /* Targeting the widget's elements */
+  .goog-te-gadget,
+  .goog-te-banner-frame,
+  .goog-te-menu-value,
+  .goog-te-menu2,
+  .goog-te-menu2-item {
+    border: 1px solid #848484; /* Border around the widget */
+    border-radius: 9px; /* Rounded corners */
+    background-color: #9e9e9e; /* Background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for depth */
+  }
+
+  /* Style the dropdown menu */
+  .goog-te-menu2 {
+    font-size: 24px; /* Font size */
+    padding: 15px; /* Padding inside the menu */
+  }
+
+  /* Style the dropdown items */
+  .goog-te-menu2-item {
+    padding: 5px 10px; /* Padding for items */
+    color: #232323; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
+  .goog-te-menu2-item:hover {
+    background-color: #f0f0f0; /* Background color on hover */
+  }

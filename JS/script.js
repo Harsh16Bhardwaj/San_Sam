@@ -14,6 +14,18 @@ document.addEventListener('scroll', function() {
     // Update the scroll watcher element's width
     scrollWatcher.style.width = `${newWidth}px`;
 });
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false
+    }, 'google_translate_element');
+}
+
+document.getElementById('begin-button').addEventListener('click', function() {
+    document.getElementById('language-overlay').style.display = 'none';
+    document.getElementById('main-content').classList.remove('hidden');
+});
+
 
 
 

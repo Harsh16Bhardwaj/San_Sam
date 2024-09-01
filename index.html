@@ -26,8 +26,7 @@
         <div id="scroll-watcher"></div>
         <img src="assets/web-logo.png" id="web-logo" alt="">
         <nav id="navbar">
-          <div id="google_translate_element" ></div>
-
+            
             <button class="nav-btn"><a  href="#preamble">Preamble</a></button>
             <button class="nav-btn"><a target="_blank" href="games.html">Games</a></button>
             <button class="nav-btn"><a target="_blank" href="Judiciary.html">Judiciary</a></button>
@@ -36,8 +35,12 @@
           
         </nav>
     </header>
-  <!-- ========== End Navbar Section ========== -->
-
+  <!-- ========== Language Overlay ========== -->
+  <div id="language-overlay">
+    <h2 class="p-5 text-4xl">Select a language you are comfortable with:</h2>
+    <div id="google_translate_element"></div>
+    <button id="begin-button">Begin</button>
+</div>
 <!-- ========== Start Landing-page Section ========== -->
 
     <section id="landing-page">
@@ -46,7 +49,7 @@
         <h3 class="text-gray-300">    Team Night's Watch    </h3>
         <h1>Sansthaein - Samvidhan</h1>
         <h2>"Shape the Future, One Law at a Time"</h2>
-        <button class="start-btn"><a href="#random-facts">START</a>  </button>
+        <a href="#random-facts"><button class="start-btn">START   </button></a>
       </div>
     </section>
 
@@ -404,15 +407,13 @@
         </section>
       </footer>
 <!-- ========== End Footer Section ========== -->
-<script>
+<script type="text/javascript">
   function googleTranslateElementInit() {
-      new google.translate.TranslateElement(
-          {pageLanguage: 'en'},
-          'google_translate_element'
-      );
-  } 
-</script>      
-<script  src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+  }
+  </script>
+  
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 <script src="./JS/script.js"></script>
 
