@@ -74,20 +74,20 @@ function showJudgment() {
         outcome = {
             message: "Congratulations! You have won the case!",
             color: "green",
-            sound: "win-sound.mp3"
+            sound: "./assets/SFX/win.wav"
         };
     } else {
         outcome = {
             message: "You have lost the case. Better luck next time!",
             color: "red",
-            sound: "lose-sound.mp3"
+            sound: "./assets/SFX/lose.wav"
         };
     }
 
     overlay.style.backgroundColor = outcome.color;
     overlay.textContent = outcome.message;
-    document.getElementById('win-sound').src = outcome.sound; // Update sound source
-    document.getElementById('win-sound').play(); // Play the appropriate sound
+    document.getElementById('sound').src = outcome.sound; // Update sound source
+    document.getElementById('sound').play(); // Play the appropriate sound
 
     overlay.style.display = 'flex';
     overlay.onclick = () => {

@@ -53,6 +53,10 @@
     color: #333;
     background-color: #dde7e5;
 }
+#scenario-description{
+    color: white;
+    font-size: 1.2rem;
+}
 #start-simulation-btn{
     border-radius: 15px;
     background-color: #0056b3;
@@ -95,7 +99,7 @@
 .law-item {
     flex: 1 1 18%; /* Adjust percentage based on the number of blocks per row */
     box-sizing: border-box;
-    padding: 10px;
+    padding: 0.8rem 1rem !important; 
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
@@ -125,10 +129,11 @@
 .counterpart-item {
     flex: 1 1 100%;
     box-sizing: border-box;
-    padding: 10px;
+    padding: 1px 10px ;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f9f9f9;
+
 }
 
 .counterpart-item input {
@@ -169,10 +174,14 @@ body {
 }
 .law-item {
     background-color: #f4f4f4;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .law-description {
     margin-top: 5px;
@@ -182,8 +191,15 @@ body {
 .option-item {
     display: flex;
     align-items: center;
-    padding: 5px;
+    padding: 5px 10px;
     cursor: pointer;
+    border: rgb(167, 167, 167) 3px solid;
+    border-radius: .5rem;
+    margin-block:1rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
 }
 .option-item.selected {
     background-color: #d0e0ff;
@@ -210,8 +226,10 @@ body {
     font-family: "Poppins";
     color: #b30d55;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    margin-top: 20px;
+    margin-block: 20px;
     padding-top: 20px;
+    text-decoration: underline;
+
 }

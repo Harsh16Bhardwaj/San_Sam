@@ -19,8 +19,8 @@ const scenarios = [
                 { form: 'Form B', label: 'Partial transparency with basic compensation.' }
             ],
             3: [
-                { form: 'Form B', label: 'Partial transparency with basic compensation.' },
-                { form: 'Form C', label: 'Limited transparency and inadequate compensation.' }
+                { form: 'Form A', label: 'Partial transparency with basic compensation.' },
+                { form: 'Form B', label: 'Limited transparency and inadequate compensation.' }
             ],
             4: [
                 { form: 'Form A', label: 'Extensive support and modern protections.' },
@@ -283,7 +283,6 @@ const scenarios = [
 
 
 // HTML elements
-// HTML elements
 const scenarioTitle = document.getElementById('scenario-title');
 const scenarioDescription = document.getElementById('scenario-description');
 const lawsContainer = document.getElementById('laws-container');
@@ -293,29 +292,42 @@ const startSimulationBtn = document.getElementById('start-simulation-btn');
 const scenarioSelect = document.getElementById('scenario-select');
 const simulationContainer = document.getElementById('simulation-container');
 const resultMessage = document.getElementById('result-message');
-
+const win = new Audio("./assets/SFX/win.wav");
+const lose = new Audio("./assets/SFX/lose.wav");
 let attemptCount = 0;
 const maxAttempts = 3;
 
-// Utility function to create clickable options
+// Utility function to create clickable input options
 function createClickableOption(name, value, label) {
-    const optionContainer = document.createElement('div');
+    const optionContainer = document.createElement('label');
     optionContainer.className = 'option-item';
-    optionContainer.textContent = label;
 
-    // Toggle selected state
+    // Create the input element (radio button)
+    const inputElement = document.createElement('input');
+    inputElement.type = 'radio';
+    inputElement.name = name;
+    inputElement.value = value;
+    
+    // Add the label text
+    const textNode = document.createTextNode(label);
+
+    // Append the input and label text to the label container
+    optionContainer.appendChild(inputElement);
+    optionContainer.appendChild(textNode);
+
+    // Event listener for the label to highlight selected option
     optionContainer.addEventListener('click', () => {
-        const isSelected = optionContainer.classList.contains('selected');
-        const options = optionContainer.parentElement.children;
-        Array.from(options).forEach(opt => opt.classList.remove('selected'));
-        if (!isSelected) {
+        const options = optionContainer.parentElement.querySelectorAll(`label.option-item`);
+        options.forEach(opt => opt.classList.remove('selected'));
+        
+        if (inputElement.checked) {
             optionContainer.classList.add('selected');
         }
-        document.querySelector(`input[name="${name}"][value="${value}"]`).checked = !isSelected;
     });
 
     return optionContainer;
 }
+
 
 // Populate scenario select dropdown
 function populateScenarioSelect() {
@@ -375,6 +387,7 @@ function analyzeSituation(scenarioIndex) {
         if (selectedForm && selectedForm.value === scenario.correctForms[law.id]) {
             lawElement.style.backgroundColor = 'lightgreen'; // Correct
             lawElement.classList.add('correct');
+
         } else {
             lawElement.style.backgroundColor = 'lightcoral'; // Incorrect
             lawElement.classList.add('incorrect');
@@ -386,29 +399,37 @@ function analyzeSituation(scenarioIndex) {
         resultMessage.style.display = 'block';
         resultMessage.textContent = 'Crisis resolved successfully!';
         resultMessage.className = 'correct';
+        win.play();
+        
     } else {
-        attemptCount++;
-        if (attemptCount >= maxAttempts) {
-            revealSolution(scenarioIndex);
+        
             resultMessage.style.display = 'block';
-            resultMessage.textContent = 'You have made 3 incorrect attempts. The correct answers have been revealed.';
+            resultMessage.textContent = `Some laws are not in their optimal forms. Please review the selected forms. `;
             resultMessage.className = 'info';
-        } else {
-            resultMessage.style.display = 'block';
-            resultMessage.textContent = `Some laws are not in their optimal forms. Please review the selected forms. Attempt ${attemptCount}/${maxAttempts}`;
-            resultMessage.className = 'info';
-        }
+            lose.play();
     }
 }
 
 // Reveal solution
 function revealSolution(scenarioIndex) {
     const scenario = scenarios[scenarioIndex];
-    scenario.laws.forEach((law) => {
-        const lawElement = lawsContainer.children[law.id - 1];
-        lawElement.style.backgroundColor = 'lightcoral'; // Incorrect
-        lawElement.classList.add('incorrect');
-        lawElement.textContent += ` (Correct Answer: ${scenario.correctForms[law.id]})`;
+    
+    scenario.laws.forEach((law, index) => {
+        const lawElement = lawsContainer.children[index]; // Accessing the correct element based on index
+        const correctForm = scenario.correctForms[law.id]; // Retrieve the correct answer for the law by its ID
+        console.log(correctForm);
+        console.log(lawElement);
+        if (lawElement) {
+            // Highlight the correct answer in green if it matches the selected option
+            if (document.querySelector(`input[name="law-${law.id}"]:checked`)?.value === correctForm) {
+                lawElement.style.backgroundColor = 'lightgreen';
+                lawElement.classList.add('correct');
+            } else {
+                lawElement.style.backgroundColor = 'lightcoral'; // Highlight the incorrect answer
+                lawElement.classList.add('incorrect');
+                lawElement.textContent += ` (Correct Answer: ${correctForm})`; // Display the correct answer
+            }
+        }
     });
 }
 
