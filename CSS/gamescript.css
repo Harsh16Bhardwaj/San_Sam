@@ -36,7 +36,6 @@
     color: #cdcbcb;
     
 }
-
 #landing-page{
     height: 80vh;
     background-image: url(../assets/game_image.jpeg);
@@ -52,12 +51,23 @@
     border-radius: 40px;
     padding: 10px;
     color: #333;
-    margin-top: 0;
     background-color: #dde7e5;
 }
 #start-simulation-btn{
     border-radius: 15px;
-
+    background-color: #0056b3;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+#analyze-btn{
+    border-radius: 15px;
+    background-color: #0056b3;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+    color: white;
+    font-weight: 300;
 }
 
 #simulation-container {
@@ -68,8 +78,6 @@
         color: #cdcbcb;
         padding: 20px;
         font-size: 1.5rem;
-        margin-top: -40px;
-        margin-top: 20px;
     }
     
 }
@@ -83,38 +91,31 @@
 .law-item {
     flex: 1 1 18%; /* Adjust percentage based on the number of blocks per row */
     box-sizing: border-box;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    
     background-color: #f9f9f9;
     transition: background-color 0.3s;
 }
 
 .law-item.correct {
-    background-color: rgb(97, 253, 97);
+    background-color: lightgreen;
 }
 
 .law-item.incorrect {
-    background-color: rgb(246, 50, 50);
-    color: white;
+    background-color: lightcoral;
 }
 
 .law-description {
-    padding-left: 13px;
-    padding-right: 13px;
-    text-align: center;
     margin-top: 5px;
     color: #555;
 }
 
 #counterparts-container {
     display: flex;
-    margin-left: 20%;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
-    width: 60%;
 }
 
 .counterpart-item {
@@ -122,41 +123,27 @@
     box-sizing: border-box;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    background-color: #efefef;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    
+    border-radius: 4px;
+    background-color: #f9f9f9;
 }
 
 .counterpart-item input {
     margin-right: 10px;
-    color: #856404;
-    background-color: #008e87;
 }
 
 button {
-    margin-left: 45%;
     padding: 10px 20px;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 16px;
     cursor: pointer;
-    background-color: #008e87;
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
-    font-weight: 700;
 }
 
 button:hover {
     background-color: #0056b3;
-}
-#result-message{
-    background-color: #cb392e;
-    padding-bottom: 40px;
-    border-radius: 20px;
-
 }
 
 #result-message.correct {
@@ -164,24 +151,17 @@ button:hover {
 }
 
 #result-message.info {
-    width: auto;
-    display: flex;
-    border-radius: 10px;
-    text-align: center;
-    color: white;
+    color: blue;
+}
+
+body {
+    font-family: Arial, sans-serif;
 }
 #scenario-selection {
     margin-bottom: 20px;
 }
 #simulation-container {
     margin-top: 20px;
-    >h4{
-        color: #008e87;
-        font-family: "Poppins";
-        font-size: 1.4rem;
-        text-align: center;
-        margin: 10px;
-    }
 }
 .law-item {
     background-color: #f4f4f4;
@@ -225,77 +205,9 @@ button:hover {
 #scenario-title{
     font-family: "Poppins";
     color: #b30d55;
-    font-size: 2.9rem;
-    font-weight: 800;
+    font-size: 2.5rem;
+    font-weight: 500;
     text-align: center;
     margin-top: 20px;
     padding-top: 20px;
-
-}
-#scenario-description{
-    color: #f0f0f0;
-    margin-bottom: 40px;
-    font-size: 1.2rem;
-    padding-top: 10px;
-    font-family: "Poppins";
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
-#google_translate_element {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    margin-left: 83%;
-  }
-
-  /* Targeting the widget's elements */
-  .goog-te-gadget,
-  .goog-te-banner-frame,
-  .goog-te-menu-value,
-  .goog-te-menu2,
-  .goog-te-menu2-item {
-    border-radius: 9px; /* Rounded corners */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Shadow for depth */
-  }
-
-  /* Style the dropdown menu */
-  .goog-te-menu2 {
-    font-size: 24px; /* Font size */
-    padding: 15px; /* Padding inside the menu */
-  }
-
-  /* Style the dropdown items */
-  .goog-te-menu2-item {
-    padding: 5px 10px; /* Padding for items */
-    color: #232323; /* Text color */
-    cursor: pointer; /* Pointer cursor on hover */
-  }
-
-  .goog-te-menu2-item:hover {
-    background-color: #f0f0f0; /* Background color on hover */
-  }
-
-
-  /* For the alternate option item */
-.option-item.alternate {
-    background-color: #d0e0ff; /* Color for the alternate option */
-}
-
-.option-item.alternate:hover {
-    background-color: #b0c4de; /* Slightly different color on hover */
-}
-
-/* For the current laws container title */
-#laws-container-title {
-    font-family: "Poppins";
-    color: #008e87; /* Title color */
-    font-size: 2rem; /* Adjust size as needed */
-    font-weight: 700;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
 }
