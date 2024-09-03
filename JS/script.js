@@ -21,10 +21,10 @@ function googleTranslateElementInit() {
     }, 'google_translate_element');
 }
 
-document.getElementById('begin-button').addEventListener('click', function() {
-    document.getElementById('language-overlay').style.display = 'none';
-    document.getElementById('main-content').classList.remove('hidden');
-});
+// document.getElementById('begin-button').addEventListener('click', function() {
+//     document.getElementById('language-overlay').style.display = 'none';
+//     document.getElementById('main-content').classList.remove('hidden');
+// });
 
 
 

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>सन-Sam : Learning Constituion the right way</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Cinzel+Decorative:wght@400;700;900&family=Lilita+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Style+Script&family=Titan+One&display=swap"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,406 +21,587 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
-</head>
-<body>
-  <!-- ========== Start Navbar Section ========== -->
-    <header>
-        <div id="scroll-watcher"></div>
-        <img src="assets/web-logo.png" id="web-logo" alt="">
-        <nav id="navbar">
-            
-            <button class="nav-btn"><a  href="#preamble">Preamble</a></button>
-            <button class="nav-btn"><a target="_blank" href="games.html">Games</a></button>
-            <button class="nav-btn"><a target="_blank" href="Judiciary.html">Judiciary</a></button>
-            <button class="nav-btn"><a target="_blank" href="executive.html">Executive</a></button>
-           
-          
-        </nav>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <!-- ========== Start Navbar Section ========== -->
+    <header data-aos="fade-down" data-aos-delay="50">
+      <div id="scroll-watcher"></div>
+      <img src="assets/web-logo.png" id="web-logo" alt="" />
+      <nav id="navbar">
+        <button class="nav-btn"><a href="#preamble">Preamble</a></button>
+        <button class="nav-btn">
+          <a target="_blank" href="games.html">Games</a>
+        </button>
+        <button class="nav-btn">
+          <a target="_blank" href="Judiciary.html">Judiciary</a>
+        </button>
+        <button class="nav-btn">
+          <a target="_blank" href="executive.html">Executive</a>
+        </button>
+      </nav>
     </header>
-  <!-- ========== Language Overlay ========== -->
-  <div id="language-overlay">
+    <!-- ========== Language Overlay ========== -->
+    <!-- <div id="language-overlay" data-aos="zoom-in">
     <h2 class="p-5 text-4xl">Select a language you are comfortable with:</h2>
     <div id="google_translate_element"></div>
     <button id="begin-button">Begin</button>
-</div>
-<!-- ========== Start Landing-page Section ========== -->
+</div> -->
+    <!-- ========== Start Landing-page Section ========== -->
 
     <section id="landing-page">
-      <div class="landing-container">
-        <img src="assets/logo (1).png" alt="" id="team-logo">
-        <h3 class="text-gray-300">    Team Night's Watch    </h3>
+      <div class="landing-container" data-aos="zoom-in" data-aos-delay="50">
+        <img src="assets/logo (1).png" alt="" id="team-logo" />
+        <h3 class="text-gray-300">Team Night's Watch</h3>
         <h1>Sansthaein - Samvidhan</h1>
         <h2>"Shape the Future, One Law at a Time"</h2>
-        <a href="#random-facts"><button class="start-btn">START   </button></a>
+        <a href="#random-facts"><button class="start-btn">START</button></a>
       </div>
     </section>
 
-<!-- ========== End Landing-page Section ========== -->
-
+    <!-- ========== End Landing-page Section ========== -->
 
     <div id="random-facts">
-        <div>
-            <h2>Did you know that?</h2>
-            <div class="facts-container" id="facts-container">
-                <div class="fact-box">
-                    <h3>Fact Title 1</h3>
-                    <p>Fact description 1.</p>
-                </div>
-                
-                <div class="fact-box">
-                    <h3>Fact Title 2</h3>
-                    <p>Fact description 2.</p>
-                </div>
-    
-                <div class="fact-box">
-                    <h3>Fact Title 3</h3>
-                    <p>Fact description 3.</p>
-                </div>
-            </div>
+      <div>
+        <h2>Did you know that?</h2>
+        <div class="facts-container" id="facts-container" data-aos="fade-down">
+          <div class="fact-box">
+            <h3>Fact Title 1</h3>
+            <p>Fact description 1.</p>
+          </div>
+
+          <div class="fact-box">
+            <h3>Fact Title 2</h3>
+            <p>Fact description 2.</p>
+          </div>
+
+          <div class="fact-box">
+            <h3>Fact Title 3</h3>
+            <p>Fact description 3.</p>
+          </div>
         </div>
-        
+      </div>
     </div>
 
-    
-
-    
-
     <div id="riddles-zone">
-        <div class="flex justify-center	"><div class="Riddle-sphere"><h2 class="text-gray-300">Riddle Sphere</h2></div></div>
-        <div class="riddle-container">
-            <div class="riddle-box" id="riddleBox">
-                <h3 id="riddleTitle"></h3>
-                <div id="riddle-content">
-                    <div class="w-2/3 " id="box-1001"><p id="riddleDescription"></p></div>
-                    <div id="box-1002">
-                        <ul class="options" id="optionsList">
-                            <!-- Options will be dynamically added here -->
-                        </ul>
-                    </div>
-                    <div class="flex justify-end"><button id="next-btn">Next Riddle</button></div> 
-                </div>
-                
-            </div>
+      <div class="flex justify-center">
+        <div class="Riddle-sphere">
+          <h2 class="text-gray-300">Riddle Sphere</h2>
         </div>
+      </div>
+      <div class="riddle-container" data-aos="zoom-out">
+        <div class="riddle-box" id="riddleBox">
+          <h3 id="riddleTitle"></h3>
+          <div id="riddle-content">
+            <div class="w-2/3" id="box-1001">
+              <p id="riddleDescription"></p>
+            </div>
+            <div id="box-1002">
+              <ul class="options" id="optionsList">
+                <!-- Options will be dynamically added here -->
+              </ul>
+            </div>
+            <div class="flex justify-end">
+              <button id="next-btn">Next Riddle</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <section id="case-study" class="text-center">
-        <div class="flex justify-center"><h2 class="case-study-tt">Case Studies</h2></div>
+      <div class="flex justify-center" data-aos="zoom-out-down">
+        <h2 class="case-study-tt">Case Studies</h2>
+      </div>
 
-        
-        <div class="case-main ml-0 mr-0" >
-            <div class="flex justify-center"><img id="case-study-img" src="./assets/Designer (21).png" alt="" class="text-center"></div>
-            <div class="case-container">
-                <div class="case-title">Case Study Title</div>
-                <div class="case-description">
-                    <!-- Case study description will be inserted here -->
-                </div>
-        
-                <div class="case-question">Who is at fault?</div>
-        
-                <div class="case-options-container">
-                    <div class="case-option state">
-                        <button onclick="caseSelectOption(this, 'state')">State Govt</button>
-                    </div>
-                    <div class="case-option centre">
-                        <button onclick="caseSelectOption(this, 'centre')">Centre Govt</button>
-                    </div>
-                </div>
-        
-                <div class="case-judgment"></div> <!-- Placeholder for the court's judgment -->
-        
-                <button class="case-next-button" onclick="caseGenerateCaseStudy()">Next Study</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="preamble">
+      <div
+        class="case-main ml-0 mr-0"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div class="flex justify-center">
-            <div>
-                <h1 class="text-7xl">Preamble </h1>
-                <h2 class="text-6xl">:  The Soul</h2>
-            </div>
-            
-            
+          <img
+            id="case-study-img"
+            src="./assets/Designer (21).png"
+            alt=""
+            class="text-center"
+          />
         </div>
-        <div class="flex justify-center" id="preamble-img"><img src="./assets/1.png" alt=""></div>
+        <div class="case-container">
+          <div class="case-title">Case Study Title</div>
+          <div class="case-description">
+            <!-- Case study description will be inserted here -->
+          </div>
+
+          <div class="case-question">Who is at fault?</div>
+
+          <div class="case-options-container">
+            <div class="case-option state">
+              <button onclick="caseSelectOption(this, 'state')">
+                State Govt
+              </button>
+            </div>
+            <div class="case-option centre">
+              <button onclick="caseSelectOption(this, 'centre')">
+                Centre Govt
+              </button>
+            </div>
+          </div>
+
+          <div class="case-judgment"></div>
+          <!-- Placeholder for the court's judgment -->
+
+          <button class="case-next-button" onclick="caseGenerateCaseStudy()">
+            Next Study
+          </button>
+        </div>
+      </div>
     </section>
-    
-<!-- ========== Start Documentation Section ========== -->
+
+    <section
+      id="preamble"
+      data-aos="fade-zoom-in"
+      data-aos-easing="ease-in-out"
+      data-aos-delay="300"
+      data-aos-offset="0"
+    >
+      <div class="flex justify-center">
+        <div>
+          <h1 class="text-7xl">Preamble</h1>
+          <h2 class="text-6xl">: The Soul</h2>
+        </div>
+      </div>
+      <div class="flex justify-center" id="preamble-img">
+        <img src="./assets/preamble.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ========== Start Documentation Section ========== -->
     <section id="documentation">
-        <h1>Documentations</h1>
-        <div id="typeofgovt">
-            <div class="democracy flex">
-                
-                <div>
-                    <h2>Democracy: The Ultimate Sport!</h2>
-                    
-                    <h3>The Power of the Vote</h3>
-                    <p>Picture this: You’ re at a pizza party with friends, and everyone wants different toppings. Democracy is like everyone getting a vote on whether to order a pepperoni pizza, a veggie pizza, or maybe even a pineapple pizza (yes, it’s controversial!). Each vote counts, and the topping with the most votes wins. That’s how it works in a democracy—everyone gets a say, and the most popular choice becomes the new rule.</p>
-                    
-                    <h3>Elections: The Ultimate Game Show</h3>
-                    <p>Think of elections like your favorite game show. Instead of answering trivia questions, you’re choosing who will represent you and your interests. You get to vote for the contestant (candidate) who you believe will make the best decisions for the team (country). If your favorite contestant wins, it’s like hitting the jackpot and getting your dream prize!</p>
-                    
-                    <h3>Checks and Balances</h3>
-                    <p>In democracy, there are different teams, like the Executive, the Legislature, and the Judiciary, all working together. It’s like having a referee, a coach, and a captain in a sports game. Each has a different role but keeps an eye on each other to make sure no one gets too carried away. The referee (Judiciary) makes sure everyone follows the rules, the coach (Executive) makes decisions, and the captain (Legislature) represents the players’ interests.</p>
-                    
-                    <h3>Freedom and Rights</h3>
-                    <p>Democracy is like a huge party where everyone gets to bring their own music playlist. You can choose to dance to your favorite tunes, and you’re free to share your playlist with others or listen to theirs. Freedom of speech means you can say what’s on your mind (without dancing on toes), and freedom of press means there’s a lot of music reviews and opinions floating around!</p>
-                                    </div>
-                <div ><img src="./assets/indmap.png" alt=""></div>
-            </div>
-            <div class="other-govts mt-28">
-                <div class="monarchy"><img src="./assets/ELIZ.png" alt=""></div>
-                <div class="other-gov">
-                    <h3 class="extra123">Monarchy</h3>
-                    <p>A government ruled by a king or queen. It can be absolute (total control) or constitutional (limited by laws).</p>
-                    <h4>United Kingdom</h4>
-                </div>
-                <div class="sep"></div>
-                <div class="monarchy"><img src="./assets/kim.png" alt=""></div>
-                <div class="other-gov">
-                    <h3 class="">Dictatorship</h3>
-                    <p>A dictatorship is ruled by a single leader or a small group with unchecked power. Citizens have limited or no role in decision-making, and dissent is often suppressed. </p>
-                    <h4>North Korea</h4>
-                </div>
-                <div class="sep"></div>
-                <div class="monarchy"><img src="./assets/put.png" alt=""></div>
-                <div class="other-gov">
-                    <h3>Communist</h3>
-                    <p>A communist government is one where a single party that, controls all power. The state owns and manages resources, classless society with equal distribution of wealth.                    </p>
-                    <h4>Russia</h4>
-                </div>
-                
-            </div>
-            
+      <h1 data-aos="zoom-out">Documentations</h1>
+      <div id="typeofgovt">
+        <div class="democracy flex">
+          <div data-aos="fade-up-right" data-aos-delay="500">
+            <h2>Democracy: The Ultimate Sport!</h2>
+
+            <h3>The Power of the Vote</h3>
+            <p>
+              Picture this: You’ re at a pizza party with friends, and everyone
+              wants different toppings. Democracy is like everyone getting a
+              vote on whether to order a pepperoni pizza, a veggie pizza, or
+              maybe even a pineapple pizza (yes, it’s controversial!). Each vote
+              counts, and the topping with the most votes wins. That’s how it
+              works in a democracy—everyone gets a say, and the most popular
+              choice becomes the new rule.
+            </p>
+
+            <h3>Elections: The Ultimate Game Show</h3>
+            <p>
+              Think of elections like your favorite game show. Instead of
+              answering trivia questions, you’re choosing who will represent you
+              and your interests. You get to vote for the contestant (candidate)
+              who you believe will make the best decisions for the team
+              (country). If your favorite contestant wins, it’s like hitting the
+              jackpot and getting your dream prize!
+            </p>
+
+            <h3>Checks and Balances</h3>
+            <p>
+              In democracy, there are different teams, like the Executive, the
+              Legislature, and the Judiciary, all working together. It’s like
+              having a referee, a coach, and a captain in a sports game. Each
+              has a different role but keeps an eye on each other to make sure
+              no one gets too carried away. The referee (Judiciary) makes sure
+              everyone follows the rules, the coach (Executive) makes decisions,
+              and the captain (Legislature) represents the players’ interests.
+            </p>
+
+            <h3>Freedom and Rights</h3>
+            <p>
+              Democracy is like a huge party where everyone gets to bring their
+              own music playlist. You can choose to dance to your favorite
+              tunes, and you’re free to share your playlist with others or
+              listen to theirs. Freedom of speech means you can say what’s on
+              your mind (without dancing on toes), and freedom of press means
+              there’s a lot of music reviews and opinions floating around!
+            </p>
+          </div>
+          <div data-aos="fade-up-left" data-aos-delay="500">
+            <img src="./assets/indmap.png" alt="" />
+          </div>
         </div>
-        <section >
-            <div id="grad1"></div>
-            <div id="tutorial">
-                <h2>What is Judiciary?</h2>
-                <p>The judiciary interprets and applies the law, ensuring justice is served fairly and impartially. It operates independently from the executive and legislative branches, resolving disputes and reviewing laws to protect individual rights. By ensuring that legal rules are followed and addressing conflicts, the judiciary maintains social order and upholds constitutional freedoms. Essentially, it acts as the guardian of justice, ensuring everyone adheres to the rules and laws.
-                </p>
+        <div class="other-govts mt-28" data-aos="flip-up" data-aos-delay="100">
+          <div class="monarchy"><img src="./assets/ELIZ.png" alt="" /></div>
+          <div class="other-gov">
+            <h3 class="extra123">Monarchy</h3>
+            <p>
+              A government ruled by a king or queen. It can be absolute (total
+              control) or constitutional (limited by laws).
+            </p>
+            <h4>United Kingdom</h4>
+          </div>
+          <div class="sep"></div>
+          <div class="monarchy"><img src="./assets/kim.png" alt="" /></div>
+          <div class="other-gov">
+            <h3 class="">Dictatorship</h3>
+            <p>
+              A dictatorship is ruled by a single leader or a small group with
+              unchecked power. Citizens have limited or no role in
+              decision-making, and dissent is often suppressed.
+            </p>
+            <h4>North Korea</h4>
+          </div>
+          <div class="sep"></div>
+          <div class="monarchy"><img src="./assets/put.png" alt="" /></div>
+          <div class="other-gov">
+            <h3>Communist</h3>
+            <p>
+              A communist government is one where a single party that, controls
+              all power. The state owns and manages resources, classless society
+              with equal distribution of wealth.
+            </p>
+            <h4>Russia</h4>
+          </div>
+        </div>
+      </div>
+      <!-- ========== Start Judiciary Section ========== -->
+      <section>
+        <div id="grad1"></div>
+        <div>
+          <div id="tutorial" data-aos="zoom-in" data-aos-easing="ease-in-sine">
+            <h2>What is Judiciary?</h2>
+            <p>
+              The judiciary interprets and applies the law, ensuring justice is
+              served fairly and impartially. It operates independently from the
+              executive and legislative branches, resolving disputes and
+              reviewing laws to protect individual rights. By ensuring that
+              legal rules are followed and addressing conflicts, the judiciary
+              maintains social order and upholds constitutional freedoms.
+              Essentially, it acts as the guardian of justice, ensuring everyone
+              adheres to the rules and laws.
+            </p>
+            <div>
+              <div id="tut-left">
+                <h2>Key Functions</h2>
+                <div class="flex functions">
+                  <div class="feature">
+                    <h3>Interpreting Laws:</h3>
+                    <p>
+                      Courts interpret laws to ensure they are applied correctly
+                      in individual cases. This helps clarify the meaning of
+                      laws and their application to real-life.
+                    </p>
+                  </div>
+                  <div class="seppp"></div>
+                  <div class="feature">
+                    <h3>Resolving Disputes:</h3>
+                    <p>
+                      Whether it’s a disagreement between two individuals, even
+                      between the state and citizens, the judiciary resolves
+                      these disputes through legal proceedings.
+                    </p>
+                  </div>
+
+                  <div class="feature special">
+                    <h3></h3>
+                    <p></p>
+                  </div>
+
+                  <div class="feature">
+                    <h3>Protecting Rights:</h3>
+                    <p>
+                      The judiciary safeguards individual rights and liberties
+                      by reviewing laws and government actions to ensure they do
+                      not violate constitutional principles.
+                    </p>
+                  </div>
+                  <div class="seppp"></div>
+                  <div class="feature">
+                    <h3>Maintaining Order:</h3>
+                    <p>
+                      By adjudicating cases and enforcing legal rules, the
+                      judiciary helps maintain order in society and ensures
+                      justice.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="forcolor">
+            <div class="hierarchy">
+              <div class="flex justify-center" data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
                 <div>
-                    <div id="tut-left">
-                        <h2>Key Functions</h2>
-                        <div class="flex functions">
-                            <div class="feature">
-                                <h3>Interpreting Laws:</h3>
-                                <p> Courts interpret laws to ensure they are applied correctly in individual cases. This helps clarify the meaning of laws and their application to real-life.</p>
-                            </div>
-                            <div class="seppp"></div>
-                            <div class="feature">
-                                <h3>Resolving Disputes:</h3>
-                                <p>Whether it’s a disagreement between two individuals, even between the state and citizens, the judiciary resolves these disputes through legal proceedings.</p>
-                            </div>
-                            
-                            <div class="feature special">
-                                <h3></h3>
-                                <p></p>
-                            </div>
-                           
-                            <div class="feature">
-                                <h3>Protecting Rights:</h3>
-                                <p>The judiciary safeguards individual rights and liberties by reviewing laws and government actions to ensure they do not violate constitutional principles.</p>
-                            </div>
-                            <div class="seppp"></div>
-                            <div class="feature">
-                                <h3>Maintaining Order:</h3>
-                                <p>By adjudicating cases and enforcing legal rules, the judiciary helps maintain order in society and ensures justice.</p>
-                            </div>
-                        </div>
-                    </div>
+                  <img
+                    id="supimg"
+                    class="hi-img"
+                    src="./assets/supreme.png"
+                    alt=""
+                  />
                 </div>
-                <div class="forcolor">
-                    <div class="hierarchy">
-                        <div class="flex justify-center">
-                            <div><img id="supimg" class="hi-img" src="./assets/supreme.png" alt=""></div>
-                            <div id="supreme"><h2>Supreme Court of India</h2><p>The Supreme Court of India is the highest judicial authority in the country. Established in 1950, it serves as the final court of appeal, ensuring the rule of law is upheld across the nation. The Court's iconic dome symbolizes its paramount role in interpreting the Constitution and delivering justice at the highest level.</p></div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div><img id="higimg" class="hi-img" src="./assets/high.png" alt=""></div>
-                            <di id="high"><h2>High Court of States</h2><p>High Courts are the principal courts of justice in each state and union territory of India. The Delhi High Court, for example, handles a wide range of civil, criminal, and constitutional cases. These courts play a crucial role in maintaining legal order and addressing significant legal disputes at the state level.</p></div>
-                        </div>
-                        <div class="flex justify-center">
-                            <div><img id="disimg" class="hi-img" src="./assets/disc.png" alt=""></div>
-                            <div id="district"><h2>District Court</h2><p>District Courts operate at the grassroots level of the Indian judiciary, handling a variety of civil and criminal cases within their respective districts. These courts are the first point of contact for most people seeking justice and play a vital role in the day-to-day administration of justice</p></div>
-                        </div>
-                        <div class="flex justify-center pb-20" >
-                            <div><img id="misimg" class="hi-img" src="./assets/misc.png" alt=""></div>
-                            <div id="misc"><h2>Specialized</h2><p>Specialized Courts in India, such as Family Courts and Labor Courts, focus on specific types of cases. Matters like divorce, child custody, and inheritance, Disputes between employers and employees. These courts ensure that specialized issues are addressed by experts in the relevant fields.</p></div>
-                        </div>
-                        <button class="start-btn"><a href="#random-facts">Games</a>  </button>
-                    </div>
+                <div id="supreme">
+                  <h2>Supreme Court of India</h2>
+                  <p>
+                    The Supreme Court of India is the highest judicial authority
+                    in the country. Established in 1950, it serves as the final
+                    court of appeal, ensuring the rule of law is upheld across
+                    the nation. The Court's iconic dome symbolizes its paramount
+                    role in interpreting the Constitution and delivering justice
+                    at the highest level.
+                  </p>
                 </div>
-                
+              </div>
+              <div class="flex justify-center"data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div>
+                  <img
+                    id="higimg"
+                    class="hi-img"
+                    src="./assets/high.png"
+                    alt=""
+                  />
+                </div>
+                <div id="high">
+                  <h2>High Court of States</h2>
+                  <p>
+                    High Courts are the principal courts of justice in each
+                    state and union territory of India. The Delhi High Court,
+                    for example, handles a wide range of civil, criminal, and
+                    constitutional cases. These courts play a crucial role in
+                    maintaining legal order and addressing significant legal
+                    disputes at the state level.
+                  </p>
+                </div>
+              </div>
+              <div class="flex justify-center " data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div>
+                  <img
+                    id="disimg"
+                    class="hi-img"
+                    src="./assets/disc.png"
+                    alt=""
+                  />
+                </div>
+                <div id="district">
+                  <h2>District Court</h2>
+                  <p>
+                    District Courts operate at the grassroots level of the
+                    Indian judiciary, handling a variety of civil and criminal
+                    cases within their respective districts. These courts are
+                    the first point of contact for most people seeking justice
+                    and play a vital role in the day-to-day administration of
+                    justice
+                  </p>
+                </div>
+              </div>
+              <div class="flex justify-center pb-20" data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine">
+                <div>
+                  <img
+                    id="misimg"
+                    class="hi-img"
+                    src="./assets/misc.png"
+                    alt=""
+                  />
+                </div>
+                <div id="misc">
+                  <h2>Specialized</h2>
+                  <p>
+                    Specialized Courts in India, such as Family Courts and Labor
+                    Courts, focus on specific types of cases. Matters like
+                    divorce, child custody, and inheritance, Disputes between
+                    employers and employees. These courts ensure that
+                    specialized issues are addressed by experts in the relevant
+                    fields.
+                  </p>
+                </div>
+              </div>
+              <button class="start-btn">
+                <a href="#random-facts">Games</a>
+              </button>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
     </section>
-<!-- ========== End Documentation Section ========== -->
+    <!-- ========== End Judiciary Section ========== -->
 
+    <!-- ========== End Documentation Section ========== -->
 
-
-
-<!-- ========== Start Footer Section ========== -->
-    <footer class="mt-40">
-        <section id="footer-content" class="flex pt-10 mt-0 ">
-          <div id="footer-res" class="flex justify-evenly w-2/3 ">
-            <div class="grid-md ml-10">
-              <h2 class="text-2xl text-gray-200 font-semibold mb-3">
-               The  Government
-              </h2>
-              <a href="">Democracy</a><br />
-              <a href="">Monarchy Rule</a><br />
-              <a href="">Dictatorship</a><br />
-              <a href="">Republican Govt.</a><br />
-
-            </div>
-            <div class="grid-md ml-10">
-              <h2 class="text-2xl text-gray-200 font-semibold mb-3">
-                The Judiciary
-              </h2>
-              <a href="">Supreme Court</a><br />
-              <a href="">Acting Chief Justice</a><br />
-              <a href="">Original Jurisdiction</a><br />
-              <a href="">Binding Precedents</a><br />
-              <a href="">Complete Justice</a>
-            </div>
-            <div class="grid-md ml-10">
-              <h2 class="text-2xl text-gray-200 font-semibold mb-3">
-                The Legislative
-              </h2>
-              <a href="">Legislative Bodies</a><br />
-              <a href="">Rajya Sabha</a><br />
-              <a href="">Lok Sabha</a><br />
-              <a href="">Legislative Procedure</a><br />
-              <a href="">Dissolution Power</a>
-            </div>
-            <div class="grid-md ml-10">
-              <h2 class="text-2xl text-gray-200 font-semibold mb-3">
-                The Executive
-              </h2>
-              <a href="">Council Ministers</a><br />
-              <a href="">Prime Minister</a><br />
-              <a href="">Presidential Duties</a><br />
-              <a href="">State Governors</a><br />
-              <a href="">Executive Powers</a>
-            </div>
+    <!-- ========== Start Footer Section ========== -->
+    <footer class="mt-40" data-aos="fade-up">
+      <section id="footer-content" class="flex pt-10 mt-0" >
+        <div id="footer-res" class="flex justify-evenly w-2/3">
+          <div class="grid-md ml-10">
+            <h2 class="text-2xl text-gray-200 font-semibold mb-3">
+              The Government
+            </h2>
+            <a href="">Democracy</a><br />
+            <a href="">Monarchy Rule</a><br />
+            <a href="">Dictatorship</a><br />
+            <a href="">Republican Govt.</a><br />
           </div>
-          <div id="footer-title" class="text-center w-1/3">
-            <img id="footer-logo"
-              src="images/favicon.png"
-              alt=""
-              class="w-1/5 h-auto ml-auto mr-auto relative"
-            /> 
-            <h3 class="text-3xl text-gray-300 mt-10">Sansthaein &</h3>
-            <h2 class="text-7xl t" id="logo-const">Samvidhan</h2>
+          <div class="grid-md ml-10">
+            <h2 class="text-2xl text-gray-200 font-semibold mb-3">
+              The Judiciary
+            </h2>
+            <a href="">Supreme Court</a><br />
+            <a href="">Acting Chief Justice</a><br />
+            <a href="">Original Jurisdiction</a><br />
+            <a href="">Binding Precedents</a><br />
+            <a href="">Complete Justice</a>
           </div>
-        </section>
-  
-        <section
-          id="socials"
-          class="flex bottom-0 mt-10 overflow-hidden pt-10 h-96"
+          <div class="grid-md ml-10">
+            <h2 class="text-2xl text-gray-200 font-semibold mb-3">
+              The Legislative
+            </h2>
+            <a href="">Legislative Bodies</a><br />
+            <a href="">Rajya Sabha</a><br />
+            <a href="">Lok Sabha</a><br />
+            <a href="">Legislative Procedure</a><br />
+            <a href="">Dissolution Power</a>
+          </div>
+          <div class="grid-md ml-10">
+            <h2 class="text-2xl text-gray-200 font-semibold mb-3">
+              The Executive
+            </h2>
+            <a href="">Council Ministers</a><br />
+            <a href="">Prime Minister</a><br />
+            <a href="">Presidential Duties</a><br />
+            <a href="">State Governors</a><br />
+            <a href="">Executive Powers</a>
+          </div>
+        </div>
+        <div id="footer-title" class="text-center w-1/3">
+          <img
+            id="footer-logo"
+            src="images/favicon.png"
+            alt=""
+            class="w-1/5 h-auto ml-auto mr-auto relative"
+          />
+          <h3 class="text-3xl text-gray-300 mt-10">Sansthaein &</h3>
+          <h2 class="text-7xl t" id="logo-const">Samvidhan</h2>
+        </div>
+      </section>
+
+      <section
+        id="socials"
+        class="flex bottom-0 mt-10 overflow-hidden pt-10 h-96"
+      >
+        <div
+          class="w-1/5 pl-10 text-7xl mt-20 text-gray-100 mr-10 relative"
+          id="footer_socials"
         >
-          <div
-            class="w-1/5 pl-10 text-7xl mt-20 text-gray-100 mr-10 relative"
-            id="footer_socials"
-          >
-            <h3 class="text-4xl text-gray-400 relative">Follow</h3>
-            <h3 class="text-2xl mt-2 text-gray-400 relative">The</h3>
-            <h3 id="footer-social-golden">Socials</h3>
+          <h3 class="text-4xl text-gray-400 relative">Follow</h3>
+          <h3 class="text-2xl mt-2 text-gray-400 relative">The</h3>
+          <h3 id="footer-social-golden">Socials</h3>
+        </div>
+        <div class="h-96 w-1 bg-black rotate-3" id="footer_seprator"></div>
+        <div
+          class="flex w-3/5 space-x-8 pt-5 ml-auto mr-auto"
+          id="socials_hover"
+        >
+          <div>
+            <a
+              id="social1"
+              target="_blank"
+              href="https://www.linkedin.com/in/itsaryanchauhan/"
+              ><img
+                src="assets/aryan.jpg"
+                class="rounded-2xl rotate-3 w-48"
+                id="social_img"
+                alt=""
+            /></a>
           </div>
-          <div class="h-96 w-1 bg-black rotate-3" id="footer_seprator"></div>
-          <div
-            class="flex w-3/5 space-x-8 pt-5 ml-auto mr-auto"
-            id="socials_hover">
-            <div>
-              <a
-                id="social1"
-                target="_blank"
-                href="https://www.linkedin.com/in/itsaryanchauhan/"
-                ><img
-                  src="assets/aryan.jpg"
-                  class="rounded-2xl rotate-3 w-48"
-                  id="social_img"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a
-                id="social2"
-                target="_blank"
-                href="https://www.linkedin.com/in/saumya-aggarwal-0a009a28b/"
-                ><img
-                  src="assets/saumya.jpg"
-                  class="rounded-2xl rotate-3 w-48"
-                  id="social_img"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a
-                id="social3"
-                target="_blank"
-                href="https://www.linkedin.com/in/vansh-puri-300377315/"
-                ><img
-                  src="assets/vansh.jpg"
-                  class="rounded-2xl rotate-3 mt-1 w-48"
-                  id="social_img"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-              <a
-                id="social4"
-                target="_blank"
-                href="https://www.linkedin.com/in/shruti-410b79317/"
-                ><img
-                  src="assets/shruti.jpg"
-                  class="rounded-2xl rotate-3 mt-1 w-48"
-                  id="social_img"
-                  alt=""
-              /></a>
-            </div>
-            <div>
-                <a
-                  id="social4"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/jatin-kumar-616471272/"
-                  ><img
-                    src="assets//jatin.jpg"
-                    class="rounded-2xl rotate-3 mt-1 w-48"
-                    id="social_img"
-                    alt=""
-                /></a>
-              </div>
-              <div>
-                <a
-                  id="social4"
-                  target="_blank"
-                  href="https://www.linkedin.com/in/harsh-bhardwaj-80297b285/"
-                  ><img
-                    src="assets/harsh.jpg"
-                    class="rounded-2xl rotate-3 mt-1 w-48"
-                    id="social_img"
-                    alt=""
-                /></a>
-              </div>
+          <div>
+            <a
+              id="social2"
+              target="_blank"
+              href="https://www.linkedin.com/in/saumya-aggarwal-0a009a28b/"
+              ><img
+                src="assets/saumya.jpg"
+                class="rounded-2xl rotate-3 w-48"
+                id="social_img"
+                alt=""
+            /></a>
           </div>
-        </section>
-      </footer>
-<!-- ========== End Footer Section ========== -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
-  
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+          <div>
+            <a
+              id="social3"
+              target="_blank"
+              href="https://www.linkedin.com/in/vansh-puri-300377315/"
+              ><img
+                src="assets/vansh.jpg"
+                class="rounded-2xl rotate-3 mt-1 w-48"
+                id="social_img"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              id="social4"
+              target="_blank"
+              href="https://www.linkedin.com/in/shruti-410b79317/"
+              ><img
+                src="assets/shruti.jpg"
+                class="rounded-2xl rotate-3 mt-1 w-48"
+                id="social_img"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              id="social4"
+              target="_blank"
+              href="https://www.linkedin.com/in/jatin-kumar-616471272/"
+              ><img
+                src="assets//jatin.jpg"
+                class="rounded-2xl rotate-3 mt-1 w-48"
+                id="social_img"
+                alt=""
+            /></a>
+          </div>
+          <div>
+            <a
+              id="social4"
+              target="_blank"
+              href="https://www.linkedin.com/in/harsh-bhardwaj-80297b285/"
+              ><img
+                src="assets/harsh.jpg"
+                class="rounded-2xl rotate-3 mt-1 w-48"
+                id="social_img"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <!-- ========== End Footer Section ========== -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
 
-<script src="./JS/script.js"></script>
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
-
-      
-</body>
+    <script src="./JS/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
