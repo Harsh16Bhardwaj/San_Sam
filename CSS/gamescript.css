@@ -62,20 +62,29 @@
     background-color: #0056b3;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
+<<<<<<< Updated upstream
     font-weight: 300;
 }
 #analyze-btn{
     border-radius: 15px ;
+=======
+}
+#analyze-btn{
+    border-radius: 15px;
+>>>>>>> Stashed changes
     background-color: #0056b3;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
     margin-top: 3rem;
+<<<<<<< Updated upstream
     color: white;
     font-weight: 300;
     -webkit-border-radius: 15px ;
     -moz-border-radius: 15px ;
     -ms-border-radius: 15px ;
     -o-border-radius: 15px ;
+=======
+>>>>>>> Stashed changes
 }
 
 #simulation-container {
