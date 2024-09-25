@@ -12,6 +12,7 @@
   --neonyellow: #a19c3d;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +20,8 @@
 }
 body {
   background-color: var(--background);
-  height: 2000px;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
 /*Footer*/
